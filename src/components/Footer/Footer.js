@@ -1,0 +1,14 @@
+import React from 'react'
+import './footer.css';
+
+const Footer = () => {
+    return (
+        <footer className="footer">
+            <p>
+                Proyecto desarrollado por Omar Dario Melendrez Junio 2021
+            </p>
+        </footer>
+    )
+}
+
+export default Footer

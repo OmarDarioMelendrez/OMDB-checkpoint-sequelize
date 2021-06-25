@@ -1,0 +1,122 @@
+.singleMovie-description__container {
+    min-height: calc(100vh );
+    background-color: #000;
+    padding: 100px 20px 20px;
+}
+.singleMovie-description__loading {
+    min-height: calc(100vh - 60px);
+    background-color: #000;
+    padding: 100px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.singleMovie-description{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.singleMovie-description__poster {
+    width: 40%;
+    color: #FFF;
+}
+.singleMovie-description__poster-image {
+    width: 90%;
+    /* height: fit-content; */
+    padding: 5px 0;
+    margin: 0 auto;
+}
+.singleMovie-description__fav, .singleMovie-description__fav-remove {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgba(128, 128, 128, 0.466);
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+.singleMovie-description__fav:hover {
+    color: #FFF;
+    background-color: green;
+}
+.singleMovie-description__fav-remove:hover {
+    background-color: red;
+}
+.singleMovie-description__icon {
+    margin-right: 8px;
+}
+.singleMovie-description__info {
+    width: 60%;
+}
+.singleMovie-description__info-title {
+    color: #FFF;
+    font-size: 1.25rem;
+}
+.singleMovie-description__rating {
+    color: #FFF;
+    font-size: 1rem;
+    display: inline-block;
+}
+.singleMovie-description__stars-container {
+    display: inline-block;
+    margin-left: 15px;
+}
+.singleMovie-description__time {
+    color: #808080;
+    margin-top: 10px;
+}
+.singleMovie-description__time .singleMovie-year {
+    margin: 0 15px;
+}
+.singleMovie-description__time .singleMovie-type {
+    padding: 3px 5px;
+    border-radius: 10px;
+    background-color: yellow;
+    color: #000;
+}
+.singleMovie-plot__desktop ,.singleMovie-data__desktop {
+    display: none;
+}
+/* singleMovie plot */
+.singleMovie-plot {
+    max-height: 100px;
+    overflow: auto;
+    margin: 1rem 0;
+    color: #808080;
+}
+.singleMovie-data__ul {
+    list-style: none;
+    padding: 0;
+}
+.singleMovie-data__li {
+    padding-bottom: 5px;
+    color: #808080;
+}
+.singleMovie-data__li span {
+    line-height: 1.5;
+    margin-left: 5px;
+    color: #FFF;
+}
+@media screen and (min-width: 800px){
+    .singleMovies {
+        min-height: calc(100vh - 70px);
+    }  
+    .singleMovie-description__poster {
+        width: 30%;
+    }
+    .singleMovie-description__info {
+        width: 70%;
+    }
+    .singleMovie-plot, .singleMovie-data {
+        display: none;
+    }
+    .singleMovie-plot__desktop {
+        color: #FFF;
+        margin: 16px 0;
+    }
+    .singleMovie-data__desktop, .movie-plot__desktop{
+        display: block;
+    }
+}

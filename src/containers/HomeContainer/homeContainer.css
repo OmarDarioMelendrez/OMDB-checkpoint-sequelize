@@ -1,0 +1,90 @@
+.home {
+	min-height: calc(100vh - 60px);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(50,31,35,1) 100%);
+	padding: 80px 10px 0px;
+}
+.home__wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+    color: #FFF;
+}
+.home__title {
+    font-size: 2rem;
+	font-weight: 800;
+	margin: 0 auto;
+}
+.home__container-left, .home__container-rigth {
+    display: flex;
+	justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.home__container-rigth h1, .home__container-rigth h3 {
+    display: none;
+}
+.home__image {
+	width: 70%;
+	margin: 0 auto;
+}
+.home__button {
+    width: 40%;
+    margin: 15px auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+.home__button:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+@media screen and (min-width: 800px) {
+	.home {
+		min-height: calc(100vh - 200px);
+	}
+	.home__category-title {
+		font-size: 1.5rem;
+	}
+    .home__container-rigth h1, .home__container-rigth h3 {
+        display: block;
+    }
+    .home__container-left h1, .home__container-left h3 {
+        display: none;
+    }
+    .home__title {
+        font-size: 3rem;
+    }
+    .home__subtitle {
+        font-size: 1.5rem;
+    }
+    .home__button {
+        width: 300px;
+    }
+    .home__wrapper {
+        min-height: calc(100vh - 134px);
+        display: flex;
+        flex-flow: row-reverse;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__container-left {
+        width: 50%;
+    }
+    .home__container-rigth {
+        width: 50%;
+    }
+}
